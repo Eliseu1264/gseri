@@ -1,0 +1,72 @@
+{% load  static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<header id="header" class="fixed-top d-flex align-items-center" style="height:45px">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>gSeri</title>
+
+    <meta content="" name="keywords">
+    <script language="javascript" src="{% static 'js/script.js' %}"></script>
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+    <br>
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="#"><span>g</span>Seri</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li class="dropdown"><a href="#"><span>Financeiro</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Contas a receber</a></li>
+              <li><a href="#">Contas a pagar</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Administrativo</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Produtos</a></li>
+              <li><a href="#">Pedido de venda</a></li>
+              
+              <li class="dropdown"><a href="#"><span>Tabelas auxiliares</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Grupos</a></li>
+                  <li><a href="#">Códigos fiscais</a></li>
+                </ul>
+              </li>
+               <li class="dropdown"><a href="#"><span>Relatórios</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Listagem de produtos</a></li>
+                  <li><a href="#">Listagem de entradas</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>       
+               
+        </ul>
+        <!-- menu mibile -->
+        <li class="bi bi-list mobile-nav-toggle">
+          <ul>
+            <li><a href="{% url 'admin:index' %}">Manutenção admin. de dados</a></li>
+            <li><a href="#">Parâmetros gerais</a></li>
+            <li><a href="#">Contato Assist</a></li>
+            <li><a href="#">Backup</a></li>
+          </ul>
+        </i>
+      </nav>
+    </div>
+</head>
